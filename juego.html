@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .contenedor{
+            display: flex;
+    
+        }
+        .div-1{ /*acá mando a llamar la funcion del bloque*/
+            background-color: rosybrown;
+            width: 1257px; /*la anchura de los elementos de bloque*/
+            padding: 100px; /*el área de relleno en los cuatro lados de un elemento a la vez*/
+            margin: 0 auto;
+        
+        }
+        .div-2{ 
+            background-color: blueviolet;
+            width: 250px; /*la anchura de los elementos de bloque*/
+            padding: 250px; /*el área de relleno en los cuatro lados de un elemento a la vez*/
+           
+        }
+        .imagen1{
+            width: 100px;
+            padding: 100px;
+        }
+        .div-3{
+            background-color: royalblue;
+            width: 250px;
+            padding: 250px;
+            margin-left: 15px; /*establece el margen para los cuatro lados.*/
+        }
+        .div-4{ /*acá mando a llamar la funcion del bloque*/
+            background-color: red;
+            width: 1257px; /*la anchura de los elementos de bloque*/
+            padding: 100px; /*el área de relleno en los cuatro lados de un elemento a la vez*/
+            margin: 0 auto;
+        
+        }
+        table,th,tr,td{
+            border: solid 1px black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="div-1">
+            <center><h1>BIENVENIDO A EL INCREIBLE JUEGO DE</h1></center>
+            <center><h2>PIEDRA, PAPEL O TIJERA</h2></center>
+            <center><span style='font-size:100px;'>&#9994;</span><span style='font-size:100px;'>&#9995;</span><span style='font-size:100px;'>&#9996;</span></center>
+        </div>
+        <div class="contenedor">
+            <div class="div-2">
+                <h1>Jugador 1</h1>
+                Nombre <input type="text" id="nombre"><br>
+                <button id="anadir">AÑADIR</button>
+                <button id="jugar1">AZAR</button>
+            </div>
+            <div class="div-3">
+                <h1>Pc</h1>
+                <button id="pcjugar">AZAR</button>
+            </div>
+        </div>
+        <div class="div-4">
+            <center><h1><strong>TABLA</strong></h1></center> 
+            <center><button id="mNombres">MOSTRAR NOMBRE DEL JUGADOR</button></center>
+            <center><button id="mPuntos">Puntos</button></center>
+            <div id="pantalla"></div>
+        </div>
+    </div>
+    <script src="./juego.js"></script>
+</body>
+</html>
